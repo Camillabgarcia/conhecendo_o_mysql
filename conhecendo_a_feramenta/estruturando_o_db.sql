@@ -1,9 +1,9 @@
--- Criando o banco de dados
+-- Criando o banco de dados.
 CREATE SCHEMA `insight_places` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ;
 
---Criando as tabelas
-USE insight_places;   -- Usando o bando de dados
-CREATE TABLE proprietarios (                -- Criando as tabelas
+--Criando as tabelas.
+USE insight_places;   -- Usando o bando de dados.
+CREATE TABLE proprietarios (                -- Criando as tabelas.
 proprietario_id VARCHAR (255) PRIMARY KEY,
 nome VARCHAR (255),
 cpf_cpnj VARCHAR (20),
@@ -59,7 +59,7 @@ FOREIGN KEY (hospedagem_id) REFERENCES hospedagens(hospedagem_id)
 );
 
 
--- Inserindo os dados na tabela enderecos
+-- Inserindo os dados na tabela enderecos.
 INSERT INTO enderecos VALUES ('1', 'Lagoa de Teixeira', '72', 'Tirol', 'Moraes', 'SP', '87362-365');
 INSERT INTO enderecos VALUES ('2', 'Rua Nicole Barbosa', '65', 'Funcionários', 'Costela', 'RO', '99644-164');
 INSERT INTO enderecos VALUES ('3', 'Rua de da Costa', '465', 'Itaipu', 'Monteiro', 'CE', '30053-759');
@@ -81,7 +81,7 @@ INSERT INTO enderecos VALUES ('18', 'Distrito Pedro Lucas Rezende', '5', 'Canad�
 INSERT INTO enderecos VALUES ('19', 'Esplanada Barros', '2', 'Jardim Montanhês', 'da Conceição', 'PB', '73795-930');
 INSERT INTO enderecos VALUES ('20', 'Vila Maria Clara Martins', '91', 'Universo', 'Nunes', 'GO', '37308-212');
 
--- Inserindo os dados na tabela clientes
+-- Inserindo os dados na tabela clientes.
 INSERT INTO clientes VALUES ('1', 'João Miguel Sales', '658.190.237-30', 'joão_352@dominio.com');
 INSERT INTO clientes VALUES ('2', 'Gustavo Carvalho', '134.975.082-41', 'gustavo_802@dominio.com');
 INSERT INTO clientes VALUES ('3', 'Maria Eduarda Correia', '298.460.513-60', 'maria_510@dominio.com');
@@ -103,7 +103,7 @@ INSERT INTO clientes VALUES ('18', 'Emanuelly Cardoso', '784.152.063-80', 'emanu
 INSERT INTO clientes VALUES ('19', 'Sra. Maysa Cunha', '423.659.108-15', 'sra._216@dominio.com');
 INSERT INTO clientes VALUES ('20', 'Carlos Eduardo Rocha', '206.598.743-00', 'carlos_218@dominio.com');
 
--- Inserindo os dados na proprietarios
+-- Inserindo os dados na proprietarios.
 INSERT INTO proprietarios VALUES ('1', 'Luna Fernandes', '408.153.796-84', 'luna_537@dominio.com');
 INSERT INTO proprietarios VALUES ('2', 'Bárbara Melo', '389.106.427-69', 'bárbara_228@dominio.com');
 INSERT INTO proprietarios VALUES ('3', 'Maria Fernanda Oliveira', '759.230.468-65', 'maria_858@dominio.com');
@@ -125,7 +125,7 @@ INSERT INTO proprietarios VALUES ('18', 'Esther Souza', '271.583.069-68', 'esthe
 INSERT INTO proprietarios VALUES ('19', 'Ana Beatriz Gonçalves', '640.182.795-58', 'ana_922@dominio.com');
 INSERT INTO proprietarios VALUES ('20', 'Ana Vitória Mendes', '284.619.573-00', 'ana_916@dominio.com');
 
--- Inserindo os dados na hospedagem
+-- Inserindo os dados na hospedagem.
 INSERT INTO hospedagens VALUES ('1', 'casa', '1', '1', '0');
 INSERT INTO hospedagens VALUES ('2', 'casa', '2', '2', '1');
 INSERT INTO hospedagens VALUES ('3', 'hotel', '3', '3', '1');
@@ -147,7 +147,7 @@ INSERT INTO hospedagens VALUES ('18', 'hotel', '18', '18', '0');
 INSERT INTO hospedagens VALUES ('19', 'casa', '19', '19', '1');
 INSERT INTO hospedagens VALUES ('20', 'casa', '20', '20', '0');
 
--- Inserindo os dados na alugueis
+-- Inserindo os dados na alugueis.
 INSERT INTO alugueis VALUES ('1', '1', '8450', '2023-07-15', '2023-07-20', '3240');
 INSERT INTO alugueis VALUES ('2', '2', '9231', '2023-11-16', '2023-11-23', '6762');
 INSERT INTO alugueis VALUES ('3', '3', '6955', '2023-03-21', '2023-03-28', '707');
@@ -169,7 +169,7 @@ INSERT INTO alugueis VALUES ('18', '18', '5631', '2023-09-06', '2023-09-12', '41
 INSERT INTO alugueis VALUES ('19', '19', '7062', '2022-12-31', '2023-01-07', '1701');
 INSERT INTO alugueis VALUES ('20', '20', '3072', '2023-09-04', '2023-09-05', '475');
 
--- Inserindo os dados avaliacoes
+-- Inserindo os dados avaliacoes.
 INSERT INTO avaliacoes VALUES ('1', '1', '8450', '2', 'Horrível localização.');
 INSERT INTO avaliacoes VALUES ('10', '10', '198', '2', 'Horrível atendimento.');
 INSERT INTO avaliacoes VALUES ('100', '100', '4019', '2', 'Péssima infraestrutura.');
@@ -191,7 +191,7 @@ INSERT INTO avaliacoes VALUES ('1012', '1012', '2050', '4', 'Agradável infraest
 INSERT INTO avaliacoes VALUES ('1013', '1013', '2515', '4', 'Ótima localização.');
 INSERT INTO avaliacoes VALUES ('1014', '1014', '9400', '4', 'Maravilhosa infraestrutura.');
 
--- Conhecendo os dados
+-- Conhecendo os dados.
 SELECT * FROM alugueis;
 
 SELECT * FROM avaliacoes;
