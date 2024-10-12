@@ -47,12 +47,13 @@ GROUP BY p.nome;                                                     -- Agrupa o
 
 -- Consulta sobre os meses com maior e menor demanda de alugueis:
 
-SELECT YEAR(data_inicio) AS Ano, 
-	   MONTH(data_inicio) AS Mês,
-       COUNT(*) AS Total_alugueis
-FROM alugueis 
-GROUP BY Ano, Mês
-ORDER BY Total_alugueis DESC;
+SELECT YEAR(data_inicio) AS Ano,                           -- Extrai o ano da data de início do aluguel e renomeia a coluna para 'Ano'
+       MONTH(data_inicio) AS Mês,                          -- Extrai o mês da data de início do aluguel e renomeia a coluna para 'Mês'
+       COUNT(*) AS Total_alugueis                          -- Conta o número total de aluguéis e renomeia a coluna para 'Total_alugueis'
+FROM alugueis                                              -- Seleciona os dados da tabela 'alugueis'
+GROUP BY Ano, Mês                                          -- Agrupa os resultados pelo ano e mês do início do aluguel
+ORDER BY Total_alugueis DESC;                              -- Ordena os resultados pelo total de aluguéis em ordem decrescente
+
 
        
 

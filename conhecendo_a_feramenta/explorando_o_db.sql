@@ -1,4 +1,4 @@
--- Explorando os tipos de dados.
+-- 03. Explorando os tipos de dados.
 
 -- Explorando os tipos de dados: Se são do tipo inteiro, float, char. varchar, decimal.
 
