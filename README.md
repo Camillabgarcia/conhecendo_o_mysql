@@ -1,4 +1,5 @@
 Formação MySQL - Projeto Insight Places
+
 Este repositório contém as atividades desenvolvidas durante a primeira etapa da Formação Conhecendo MySQL na Alura. O objetivo principal deste curso foi aprender a criar, manipular e consultar bancos de dados utilizando MySQL, com base no projeto da empresa fictícia Insight Places, uma plataforma de hospedagens.
 
 🚀 Tecnologias e Ferramentas Utilizadas
